@@ -60,7 +60,24 @@ module.exports = function(grunt) {
 			 	recursive: true,
 			 	syncDest: true
 			 }
-		}
+		},
+		
+		//Jade
+		jade: {
+	      compile: {
+	        options: {
+	          pretty: true,
+	        },
+	        
+	        files: [ {
+              cwd: "./src/assets/templates/jade/",
+              src: "**/*.jade",
+              dest: "./src/assets/templates/",
+              expand: true,
+              ext: ".html"
+            } ]
+	      }
+	    }
 	};
 	grunt.initConfig(gruntConfig);
 
@@ -76,6 +93,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-rsync');
     // uncomment for use less
 	grunt.loadNpmTasks('grunt-contrib-less');
-
+	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.registerTask('default', tasks);
 };
