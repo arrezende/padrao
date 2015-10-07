@@ -1,0 +1,43 @@
+@nome_cor1: azul;
+@nome_cor2: azul2;
+@nome_cor3: rosa;
+@nome_cor4: rosa2;
+
+@cor1: #0F4B8F;
+@cor2: #3F73AD;
+@cor3: #F6CDDB;
+@cor4: #F9B5CC;
+
+@menu_link_hover: #000;
+
+.@{nome_cor1}, .@{nome_cor1} a{color: @cor1;}
+.@{nome_cor2}, .@{nome_cor2} a{color: @cor2;}
+.@{nome_cor3}, .@{nome_cor3} a{color: @cor3;}
+.@{nome_cor4}, .@{nome_cor4} a{color: @cor4;}
+
+.btn.@{nome_cor1}{background: @cor1;border: 1px solid @cor1+5;}
+.btn.@{nome_cor2}{background: @cor2;border: 1px solid @cor2+5;}
+.btn.@{nome_cor3}{background: @cor3;border: 1px solid @cor3+5;}
+.btn.@{nome_cor4}{background: @cor4;border: 1px solid @cor4+5;}
+
+.btn.@{nome_cor1}.inverted{background-color: @cor2;color: #fff;}
+.btn.@{nome_cor1}.inverted:hover{background-color: @cor1;color: #fff;}
+.btn.@{nome_cor1}:hover{background-color: @cor2;color: #fff;}
+
+.btn.@{nome_cor2}.inverted{background-color: @cor1;color: #fff;}
+.btn.@{nome_cor2}.inverted:hover{background-color: @cor2;color: #fff;}
+.btn.@{nome_cor2}:hover{background-color: @cor1;color: #fff;}
+
+.btn.@{nome_cor3}.inverted{background-color: @cor4;color: #fff;}
+.btn.@{nome_cor3}.inverted:hover{background-color: @cor3;color: #fff;}
+.btn.@{nome_cor3}:hover{background-color: @cor4;color: #fff;}
+
+.btn.@{nome_cor4}.inverted{background-color: @cor3;color: #fff;}
+.btn.@{nome_cor4}.inverted:hover{background-color: @cor4;color: #fff;}
+.btn.@{nome_cor4}:hover{background-color: @cor3;color: #fff;}
+
+
+.bg.@{nome_cor1}{background: @cor1;}
+.bg.@{nome_cor2}{background: @cor2;}
+.bg.@{nome_cor3}{background: @cor3;}
+.bg.@{nome_cor4}{background: @cor4;}
