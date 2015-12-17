@@ -10,13 +10,13 @@ A base to start and deploy your project usign Grunt: The JavaScript Task Runner
 - Clone Grunt Boilerplate
 
 ```bash
-$ git clone https://github.com/vagnervjs/grunt-boilerplate.git
+$ git clone https://github.com/arrezende/padrao.git
 ```
 
 - Enter in the folder
 
 ```bash
-$ cd grunt-boilerplate
+$ cd padrao
 ```
 
 - Install dependencies
@@ -49,7 +49,7 @@ $ sudo grunt
 
 ## License
 
-Code is under [MIT license](http://vagnersantana.mit-license.org)  © Vagner Santana.
+Original Code is under [MIT license](http://vagnersantana.mit-license.org)  © Vagner Santana.
 
 
 
